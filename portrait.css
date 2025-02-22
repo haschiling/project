@@ -1,0 +1,246 @@
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden; /* No left-right scrolling */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent sizing */
+    
+}
+
+/* Prevents elements from exceeding screen width */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Top Bar */
+.top-bar {
+    width: 100%;
+    height: 4%;
+    background: #EDEDED;
+    color: #3E2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80%;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    width: 100%;
+    height: 50px;
+    background: #B7C8B5;
+    color: #B44D34;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 999;
+}
+
+/* Site Name */
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+    color: #B44D34;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.menu-button {
+    color: #B44D34;
+    background-color: #B7C8B5;
+    border: none;
+    font-size: 120%;
+}
+
+.lang-button {
+    background: none;
+    border: none;
+    color: #B44D34;
+    font-size: 80%;
+    cursor: pointer;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    background: #FFFFFF;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 12px;
+    border: 2px solid #EDEDED;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    background: #ffffff;
+}
+
+/* Image Container */
+.image-container {
+    width: 100%;
+    overflow: hidden; /* Prevents extra scrolling */
+}
+
+.image-container img {
+    width: 100%; /* Prevent overflow */
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Image Buttons (Rounded) */
+/* Image Buttons Container */
+.image-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    background: #B7C8B5;
+    border-top: 2px solid #B7C8B5;
+    border-bottom: 2px solid #B7C8B5;
+}
+
+/* Button Item (Image + Text) */
+.button-item {
+    text-align: center;
+}
+
+/* Rounded Image Style */
+.image-buttons img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #B44D34;
+    transition: transform 0.3s, border 0.3s;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+/* Hover Effect on Image */
+.image-buttons img:hover {
+    transform: scale(1.1);
+    border: 3px solid darkred;
+}
+
+/* Text under each Image */
+.image-text {
+    display: block;
+    font-size: 14px;
+    color: #B44D34;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Fix header position */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+}
+
+/* Make scroll-view fill the screen below the fixed header */
+.scroll-view {
+    position: absolute;
+    top: 90px; /* Adjust to match header height */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 90px); /* Fill remaining height */
+    overflow-y: auto; /* Enable scrolling */
+    background: #F9F9F9;
+    padding-bottom: 20px;
+}
+
+/* Image should be at the top inside the scrollable area */
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content inside scrollable area */
+.content {
+    padding: 20px;
+    color: #333;
+}
+
+
+/* Optional: Customize scrollbar */
+.scroll-view::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-view::-webkit-scrollbar-thumb {
+    background: #B44D34; /* Red scrollbar */
+    border-radius: 5px;
+}
+
+/* Footer Container */
+.footer-container {
+    background: #B7C8B5;
+    padding: 7%;
+    height: 20px;
+    text-align: center;
+    
+}
+
+/* Move text and image higher inside the green div */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 px;
+    font-size: 18px;
+    color: #B44D34;
+    font-family: cursive;
+    position: relative;
+    top: -60px; /* Moves text and image up */
+}
+
+
+/* Adjust the image position */
+.social-icons img {
+    width: 35px; /* Adjust image size if necessary */
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    top: -10px; /* Move icons slightly higher */
+}
+
+/* Adjust website name position */
+.website-name {
+    font-size: 30px;
+    font-family: cursive;
+    color: #B44D34;
+    text-align: center;
+    position: relative;
+    top: -150px; /* Move website name up */
+}

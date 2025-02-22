@@ -1,0 +1,10 @@
+body {
+    background-color: lightgreen;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: darkgreen;
+}
