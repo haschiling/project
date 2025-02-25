@@ -1,10 +1,238 @@
-body {
-    background-color: lightgreen;
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     font-family: Arial, sans-serif;
-    text-align: center;
+    background: #F5F5DC;
+    overflow-x: hidden;
 }
 
-h1 {
-    font-size: 32px;
-    color: darkgreen;
+/* Top Bar */
+.top-bar {
+    width: 100%;
+    height: 40px;
+    background: #EDEDED;
+    color: #3E2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    width: 100%;
+    height: 50px;
+    background: #B7C8B5;
+    color: #B44D34;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: fixed;
+    top: 40px;
+    left: -20px;
+    z-index: 999;
+}
+
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+    color: #B44D34;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-button, .lang-button {
+    background: none;
+    border: none;
+    color: #B44D34;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #FFFFFF;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #EDEDED;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Main Image */
+.image-container {
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover; 
+}
+
+
+/* Category Buttons */
+.image-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 15px;
+    background: #B7C8B5;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    border-top: 2px solid #B7C8B5;
+    border-bottom: 2px solid #B7C8B5;
+    margin-top: -10px;
+}
+
+.button-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.image-buttons img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #B44D34;
+    transition: transform 0.3s, border 0.3s;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+.image-buttons img:hover {
+    transform: scale(1.1);
+    border: 3px solid darkred;
+}
+
+
+
+.image-text {
+    font-size: 14px;
+    color: #B44D34;
+    margin-top: 5px;
+}
+
+
+
+.scroll-view2 {
+    display: flex;
+    flex-wrap: wrap; 
+    overflow-x: auto; 
+    overflow-y: visible; 
+    white-space: normal; 
+    scroll-behavior: smooth;
+    padding: 10px;
+    background: #FFFFFF;
+    gap: 10px; 
+    max-width: 100%; 
+    flex-direction: row;
+    direction: ltr; 
+}
+
+/* Row Styling */
+.scroll-view2 .row {
+    display: flex;
+    background-color: #FFFFFF;
+    gap: 20px; 
+    flex-shrink: 0; 
+    width: 100%; 
+}
+
+/* Content in each item */
+.scroll-view2 p {
+    background: #EDEDED;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+/* Optional: Customize scrollbar */
+.scroll-view2::-webkit-scrollbar {
+    height: 6px;
+}
+
+.scroll-view2::-webkit-scrollbar-thumb {
+    background: #B44D34;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footer-container {
+    background: #B7C8B5;
+    padding: 2.5%;
+    height: 20px;
+    text-align: center;
+    position: relative; 
+    width: 100%;
+    margin-top: 0px;
+    
+}
+.footer-container {
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 px;
+        font-size: 18px;
+        color: #B44D34;
+        font-family: cursive;
+        position: relative;
+        top: -60px; 
+        left: -40px;
+    }
+    
+    
+    /* Adjust the image position */
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        position: relative;
+        top: -10px; 
+        left: 5px;
+        
+        
+    }
+    
+    /* Adjust website name position */
+    .website-name {
+        font-size: 30px;
+        font-family: cursive;
+        color: #B44D34;
+        text-align: center;
+        position: relative;
+        top: -150px;
+        
+    }
 }

@@ -1,10 +1,10 @@
 /* Prevent horizontal scrolling */
 html, body {
-    overflow-x: hidden; /* No left-right scrolling */
+    overflow-x: hidden; 
     width: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures consistent sizing */
+    box-sizing: border-box; 
     
 }
 
@@ -101,18 +101,18 @@ html, body {
 /* Image Container */
 .image-container {
     width: 100%;
-    overflow: hidden; /* Prevents extra scrolling */
+    overflow: hidden; 
 }
 
 .image-container img {
-    width: 100%; /* Prevent overflow */
+    width: 100%; 
     height: auto;
     object-fit: cover;
     display: block;
 }
 
 /* Image Buttons (Rounded) */
-/* Image Buttons Container */
+
 .image-buttons {
     display: flex;
     justify-content: space-around;
@@ -166,19 +166,19 @@ header {
     z-index: 1000;
 }
 
-/* Make scroll-view fill the screen below the fixed header */
+
 .scroll-view {
     position: absolute;
-    top: 90px; /* Adjust to match header height */
+    top: 90px; 
     left: 0;
     width: 100%;
-    height: calc(100vh - 90px); /* Fill remaining height */
-    overflow-y: auto; /* Enable scrolling */
+    height: calc(100vh - 90px); 
+    overflow-y: auto; 
     background: #F9F9F9;
     padding-bottom: 20px;
 }
 
-/* Image should be at the top inside the scrollable area */
+
 .image-container img {
     width: 100%;
     height: auto;
@@ -193,13 +193,13 @@ header {
 }
 
 
-/* Optional: Customize scrollbar */
+
 .scroll-view::-webkit-scrollbar {
     width: 8px;
 }
 
 .scroll-view::-webkit-scrollbar-thumb {
-    background: #B44D34; /* Red scrollbar */
+    background: #B44D34; 
     border-radius: 5px;
 }
 
@@ -222,17 +222,17 @@ header {
     color: #B44D34;
     font-family: cursive;
     position: relative;
-    top: -60px; /* Moves text and image up */
+    top: -60px; 
 }
 
 
 /* Adjust the image position */
 .social-icons img {
-    width: 35px; /* Adjust image size if necessary */
+    width: 35px; 
     height: 35px;
     cursor: pointer;
     position: relative;
-    top: -10px; /* Move icons slightly higher */
+    top: -10px; 
 }
 
 /* Adjust website name position */
@@ -242,5 +242,5 @@ header {
     color: #B44D34;
     text-align: center;
     position: relative;
-    top: -150px; /* Move website name up */
+    top: -150px; 
 }
